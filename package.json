@@ -135,12 +135,12 @@
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.3",
 		"unplugin-icons": "^0.15.2",
-		"vite": "^4.0.0"
+		"vite": "^5.0.0"
 	},
 	"type": "module",
 	"dependencies": {
 		"html-to-text": "^9.0.3",
 		"pretty": "^2.0.0",
-		"svelte": "^3.55.1"
+		"svelte": "^5.0.0-next.69"
 	}
 }
