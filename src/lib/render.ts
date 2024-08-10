@@ -1,22 +1,21 @@
 import { convert } from 'html-to-text';
 import pretty from 'pretty';
-import type { ComponentProps, ComponentType, SvelteComponent } from 'svelte';
+import { render as svelteRender } from 'svelte/server';
 
-export const render = <Component extends SvelteComponent>({
+export const render = ({
 	template,
-	props,
+	props = {},
 	options
 }: {
-	template: ComponentType<Component>;
-	props?: ComponentProps<Component>;
+	template: (...args: unknown[]) => void;
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	props?: Record<string, any>;
 	options?: {
 		plainText?: boolean;
 		pretty?: boolean;
 	};
 }) => {
-	const { html } =
-		// @ts-ignore
-		template.render(props);
+	const { html } = svelteRender(template, { props });
 	if (options?.plainText) {
 		return renderAsPlainText(html);
 	}
