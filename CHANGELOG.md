@@ -1,5 +1,9 @@
 # @cmjoseph07/svelty-email
 
+## 0.1.1
+
+- fix: Add default export for "." to resolve vitest issue
+
 ## 0.1.0
 
 - breaking: updates dep to Svelte 5 and updated `render.ts` to allow for Svelte 5 support
