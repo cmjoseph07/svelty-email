@@ -1,5 +1,13 @@
 # @cmjoseph07/svelty-email
 
+## 0.1.0
+
+- breaking: updates dep to Svelte 5 and updated `render.ts` to allow for Svelte 5 support
+
+## 0.0.11
+
+- fix: Head component `http-equiv` attribute typo
+
 ## 0.0.10
 
 - fix: duplicate markdown produced from `Container.svelte` yank, removed duplicate code.
