@@ -10,7 +10,7 @@
 # Warning
 
 > [!WARNING]
-> Breaking change made for Svelte 5 support will lib is being re-written. Please use `0.0.11` for Svelte 4 apps.
+> Breaking change made for Svelte 5 support while lib is being re-written. Please use `0.0.11` for Svelte 4 apps.
 
 # Introduction
 
